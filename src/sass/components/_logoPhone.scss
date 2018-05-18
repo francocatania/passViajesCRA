@@ -1,0 +1,42 @@
+.logoPhone {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: 'Quicksand', sans-serif;
+
+  &--animated {
+    animation: moveInBottom ease-out .75s;
+  }
+  
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+
+.logoContainer {
+  display: flex;
+
+  &__PASS {
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  &__Viajes {
+    color: $accentColor;
+  }
+}
+
+.phoneContainer {
+  display: flex;
+
+  &__text {
+    margin-right: 1rem;
+    color: $greyLight;
+  }
+
+  &__phoneNumber {
+    color: $white;
+    font-weight: bold;
+  }
+}

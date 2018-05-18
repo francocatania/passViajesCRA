@@ -1,0 +1,98 @@
+.pricingContainer {
+  margin-top: 5rem;
+
+  &--animated {
+    animation: moveInBottom 1s ease-out 1.2s;
+    animation-fill-mode: backwards;
+  }
+
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
+}
+
+.priceList {
+  
+  // &__text {
+  //   font-size: 1.5rem;
+  //   color: $white;
+  //   margin-top: 5rem;
+  // }
+  
+  &__Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+
+// <div className="pricingContainer">
+//         <span className="priceList__text">Nuestros servicios destacados</span>
+//         <div className="priceList__Container">
+//           <div className="priceItemContainer">
+
+.priceItemContainer {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba($greyDark, .4);
+  padding: 2rem; 
+  text-align: center;
+  background-color: rgba($black, .9);
+
+  @include respond(phone) {
+    margin: 1rem 0;
+    width: 60vw;
+  }
+}
+
+.priceItem {
+
+  &__destination {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  // font-weight: 200;
+  letter-spacing: 1px;
+  color: $accentColor;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: $greyLight;
+  }
+
+  &__priceContainer {
+    display: flex;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  &__currency {
+    margin-right: 1rem;
+  }
+
+  &__priceNumber {
+    font-size: 3rem;
+    color: $white;
+  }
+}
+
+.separatorLine {
+  height: 1px;
+  width: 90%;
+  background-color: $primaryColor;
+  margin: 1rem 0;
+}
+
+// <div className="priceItem__priceContainer">
+// <span className="priceItem__currency">AR$</span>
+// <span className="priceItem__priceNumber">1.600</span>

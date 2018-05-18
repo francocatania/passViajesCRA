@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/logoPhone";
+@import "components/title";
+@import "components/priceList";
+@import "components/form";
+
+@import "pages/landing";

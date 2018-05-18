@@ -1,0 +1,30 @@
+.titleContainer {
+  margin-top: 10rem;
+  
+  &--animated {
+    animation: moveInRight .5s ease-out .8s;
+    animation-fill-mode: backwards;
+  }
+
+  &__titleText {
+    color: $white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5rem;
+    margin-bottom: 4rem;
+    
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__descriptionText {
+    color: $greyLight;
+    font-size: 1.8rem;
+  }
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
+}

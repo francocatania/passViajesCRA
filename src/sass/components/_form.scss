@@ -1,0 +1,83 @@
+.form__text {
+  width: 80%;
+
+  &-title {
+    font-size: 2rem;
+    color: $white;
+    margin-bottom: 3rem;
+  }
+
+  &-description {
+    font-size: 1.2rem;
+    color: $greyLight;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+
+////////////////////////////////
+//        antd OVERIDES       //
+////////////////////////////////
+
+
+.ant-form {
+  width: 70%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-form-item {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.ant-form-vertical .ant-form-item {
+  padding-bottom: 0;
+}
+
+.ant-btn-primary {
+  color: $white;
+  background-color: $accentColor;
+  border-color: $accentColor;
+  
+  @include respond(phone) {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+.ant-input {
+  width: 100%;
+}
+
+.has-error .ant-form-explain,
+.has-error .ant-form-split {
+  color: #faad13;
+}
+
+.has-error .ant-input, 
+.has-error .ant-input:hover {
+  border-color: #faad13;
+}
+
+.has-error .ant-input, 
+.has-error .ant-input:hover {
+  border-color: #faad13;
+}
+
+.has-error .ant-input:not([disabled]):hover {
+  border-color: #faad13;
+}
+
+.ant-form-item-label label {
+  color: rgba($white, .85);
+}
+
+.ant-form-item-required:before {
+  color: #faad13;
+}
