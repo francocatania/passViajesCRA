@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Tooltip, Icon, Button } from 'antd';
+import { Form, Input, Tooltip, Icon, Button, message } from 'antd';
 import { send } from 'emailjs-com/dist/email.js';
 import { serviceID, templateID, userID } from '../emailjs-config';
 
@@ -10,22 +10,31 @@ class RegistrationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      confirmDirty: false
+      confirmDirty: false,
+      isLoading: false
     }
   }
 
+  setLoading(bool) {
+    this.setState({ isLoading: bool });
+  }
+
   handleSubmit = (e) => {
+    this.setLoading(true);
+    const setLoading = this.setLoading.bind(this);
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
       if (!err) {
         send(serviceID, templateID, values, userID)
         .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-          // mail succeeded
+          setLoading(false);
+          message.success('Mail enviado correctamente.');
         }, function(error) {
-          console.log('FAILED...', error);
-          // mail failed
+          setLoading(false);
+          message.error('Hubo un error, vuelva a intentarlo más tarde.');
        });
+      } else {
+        setLoading(false);
       }
     });
   }
@@ -87,7 +96,7 @@ class RegistrationForm extends React.Component {
         </FormItem>
         
         <FormItem >
-          <Button type="primary" htmlType="submit">Enviar</Button>
+          <Button type="primary" htmlType="submit" loading={this.state.isLoading}>Enviar</Button>
         </FormItem>
       </Form>
     );
