@@ -57,8 +57,6 @@ p {
   0% {
     opacity: 0;
     transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -67,8 +65,6 @@ p {
   0% {
     opacity: 0;
     transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -86,71 +82,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #FFFFFF; }
-
-.heading-primary {
-  color: #FFFFFF;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */ }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--main {
-        letter-spacing: 1rem;
-        font-family: 5rem; } }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--sub {
-        letter-spacing: .5rem; } }
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.paragraph {
-  font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
-
-.u-center-text {
-  text-align: center !important; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 56.25em) {
-    .u-margin-bottom-medium {
-      margin-bottom: 3rem !important; } }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 56.25em) {
-    .u-margin-bottom-big {
-      margin-bottom: 5rem !important; } }
-
-.u-margin-top-big {
-  margin-top: 8rem !important; }
-
-.u-margin-top-huge {
-  margin-top: 10rem !important; }
 
 .u-hidden {
   display: none !important; }
@@ -372,6 +303,9 @@ body {
   padding: 5rem;
   align-items: center;
   justify-content: center; }
+  .form--animated {
+    animation: moveInRight 1s ease-out 1.5s;
+    animation-fill-mode: backwards; }
   @media only screen and (min-width: 75em) {
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       .form {

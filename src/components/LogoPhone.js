@@ -10,7 +10,7 @@ class LogoPhone extends Component {
         </span>
         <span className='phoneContainer'>
           <p className='phoneContainer__text'>LLámenos al</p>
-          <p className='phoneContainer__phoneNumber'>+5411 5750 1809</p>
+          <p className='phoneContainer__phoneNumber'>+5411 6381 5200</p>
         </span>
       </div>
     );
