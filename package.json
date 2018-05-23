@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.5.2",
+    "emailjs-com": "^2.1.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
