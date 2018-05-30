@@ -1,0 +1,18 @@
+@import '~antd/dist/antd.css';
+
+// @import "abstracts/functions";
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+
+@import "./sass/base/base";
+@import "./sass/base/animations";
+@import "./sass/base/typography";
+@import "./sass/base/utilities";
+
+@import "./sass/components/logoPhone";
+@import "./sass/components/title";
+@import "./sass/components/priceList";
+@import "./sass/components/form";
+// @import "components/copyright";
+
+@import "./sass/pages/landing";

@@ -5,7 +5,7 @@
     to right bottom,
     rgba($black, 0.8),
     rgba($black, 0.8)),
-    url('./img/city-background-1502.jpg');
+    url('./city-background-1502.jpg');
   background-size: 'cover';
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,7 @@
       to right bottom,
       rgba($black, 0.8),
       rgba($black, 0.8)),
-      url('./img/city-background-1920.jpg');
+      url('./city-background-1920.jpg');
   }
 
   @include respond(tab-land) {
@@ -23,7 +23,7 @@
       to right bottom,
       rgba($black, 0.8),
       rgba($black, 0.8)),
-      url('./img/city-background-1350.jpg');
+      url('./city-background-1350.jpg');
   }
 
   @include respond(tab-port) {
@@ -31,7 +31,7 @@
       to right bottom,
       rgba($black, 0.8),
       rgba($black, 0.8)),
-      url('./img/city-background-1080.jpg');
+      url('./city-background-1080.jpg');
     flex-direction: column;
     background-position: top;
   }
@@ -41,7 +41,7 @@
       to right bottom,
       rgba($black, 0.8),
       rgba($black, 0.8)),
-      url('./img/city-background-1502.jpg');
+      url('./city-background-1502.jpg');
     flex-direction: column;
     background-position: top;
   }
