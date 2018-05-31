@@ -24,6 +24,10 @@
     font-size: 1.8rem;
   }
 
+  &__relevant-text {
+    color: $white;
+  }
+
   @include respond(tab-port) {
     margin-top: 6rem;
   }

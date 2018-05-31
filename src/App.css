@@ -133,6 +133,8 @@ body {
   .titleContainer__descriptionText {
     color: #BDBDBD;
     font-size: 1.8rem; }
+  .titleContainer__relevant-text {
+    color: #FFFFFF; }
   @media only screen and (max-width: 56.25em) {
     .titleContainer {
       margin-top: 6rem; } }
