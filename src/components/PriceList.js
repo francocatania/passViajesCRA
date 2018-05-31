@@ -22,7 +22,10 @@ class PriceList extends Component {
             </div>
             <div className="separatorLine" />
             <div className="priceItem__priceContainer">
-              <span className="priceItem__currency">AR$</span>
+              <div className="priceItem__priceTextContainer">
+                <span className="priceItem__text">Desde</span>
+                <span className="priceItem__currency">AR$</span>
+              </div>  
               <span className="priceItem__priceNumber">1.400</span>
             </div>
           </div>
@@ -36,7 +39,10 @@ class PriceList extends Component {
             </div>
             <div className="separatorLine" />
             <div className="priceItem__priceContainer">
-              <span className="priceItem__currency">AR$</span>
+              <div className="priceItem__priceTextContainer">
+                <span className="priceItem__text">Desde</span>
+                <span className="priceItem__currency">AR$</span>
+              </div>  
               <span className="priceItem__priceNumber">1.000</span>
             </div>
           </div>
@@ -45,13 +51,17 @@ class PriceList extends Component {
             <h1 className="u-hidden">City Tour Privado</h1>
             <div className="priceItem__destinationContainer">
               <h2 className="priceItem__destination">City Tour</h2>
-              <h2 className="priceItem__description">City Tour privado por hora</h2>
+              <h2 className="priceItem__description">City Tour privado</h2>
+              <h2 className="priceItem__description">Precio por hora</h2>
             </div>
             <div className="separatorLine" />
             <div className="priceItem__priceContainer">
-              <span className="priceItem__currency">AR$</span>
+              <div className="priceItem__priceTextContainer">
+                <span className="priceItem__text">Desde</span>
+                <span className="priceItem__currency">AR$</span>
+              </div>  
               <span className="priceItem__priceNumber">550</span>
-              <span className="priceItem__currency">/hora</span>
+              <span className="priceItem__currency">/h</span>
             </div>
           </div>
         </div>

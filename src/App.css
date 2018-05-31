@@ -186,8 +186,19 @@ body {
   align-items: center;
   font-family: 'Quicksand', sans-serif; }
 
-.priceItem__currency {
+.priceItem__priceTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-right: 1rem; }
+
+.priceItem__text {
+  font-size: .8rem;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.priceItem__currency {
+  line-height: 1; }
 
 .priceItem__priceNumber {
   font-size: 3rem;
