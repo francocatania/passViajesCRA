@@ -278,7 +278,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; } }
+    height: 100vh;
+    padding: 5rem; } }
 
 .App {
   display: flex;
