@@ -1,3 +1,13 @@
+.root {
+  @include respond(big-desktop) {
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
 .App {
   display: flex;
   flex-direction: row;
@@ -16,6 +26,8 @@
       rgba($black, 0.8),
       rgba($black, 0.8)),
       url('./city-background-1920.jpg');
+    max-width: 1920px;
+    max-height: 1280px;
   }
 
   @include respond(tab-land) {
@@ -48,8 +60,8 @@
 }
 
 .content {
-  height: 100vh;
-  width: 60vw;
+  height: 100%;
+  width: 60%;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -78,9 +90,10 @@
   
   @include respond(min-tab-land) {
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100vh, 0 100%);
-      clip-path: polygon(20% 0, 100% 0, 100% 100vh, 0 100%);
-      height: 100vh;
+      -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+      // height: 100%;
+      display: flex;
       padding-left: 10rem;
     }
   }
