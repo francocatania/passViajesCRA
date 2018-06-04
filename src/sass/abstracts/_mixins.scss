@@ -39,14 +39,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 56.25em) { @content };     //900px
     }
+    @if $breakpoint == plus-1001-height {
+        @media only screen and (min-height: 62.5em) { @content };    //1001px --photo
+    }
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 75em) { @content };    //1200px
     }
     @if $breakpoint == min-tab-land {
         @media only screen and (min-width: 75em) { @content };    //1200px
     }
+    @if $breakpoint == plus-1505-width {
+        @media only screen and (min-width: 93.8em) { @content };    //1502px --photo
+    }
     @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
+        @media only screen and (min-width: 112.5em) { @content };    //1800px
     }
 }
 

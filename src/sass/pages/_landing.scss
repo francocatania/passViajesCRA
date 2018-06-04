@@ -1,11 +1,15 @@
 .root {
+  display: flex;
+  height: 100vh;
+  background-color: $black;
+
   @include respond(big-desktop) {
-    background-color: $black;
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     padding: 5rem;
+  }
+  @include respond(tab-port) {
+    height: auto;
   }
 }
 
@@ -31,6 +35,14 @@
     max-height: 1280px;
   }
 
+  @include respond(plus-1505-width) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($black, 0.8),
+      rgba($black, 0.8)),
+      url('./city-background-1920.jpg');
+  }
+
   @include respond(tab-land) {
     background-image: linear-gradient(
       to right bottom,
@@ -49,6 +61,14 @@
     background-position: top;
   }
 
+  @include respond(plus-1001-height) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($black, 0.8),
+      rgba($black, 0.8)),
+      url('./city-background-1920.jpg');
+  }
+
   @include respond(phone) {
     background-image: linear-gradient(
       to right bottom,
@@ -61,12 +81,11 @@
 }
 
 .content {
-  height: 100%;
-  width: 60%;
-  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 60%;
+  padding: 5rem;
 
   @include respond(tab-port) {
     width: 100vw;

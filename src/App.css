@@ -272,14 +272,18 @@ body {
 .ant-form-item-required:before {
   color: #faad13; }
 
-@media only screen and (min-width: 112.5em) {
-  .root {
-    background-color: #212121;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 5rem; } }
+.root {
+  display: flex;
+  height: 100vh;
+  background-color: #212121; }
+  @media only screen and (min-width: 112.5em) {
+    .root {
+      align-items: center;
+      justify-content: center;
+      padding: 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .root {
+      height: auto; } }
 
 .App {
   display: flex;
@@ -293,6 +297,9 @@ body {
       background-image: linear-gradient(to right bottom, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./city-background-1920.jpg");
       max-width: 1920px;
       max-height: 1280px; } }
+  @media only screen and (min-width: 93.8em) {
+    .App {
+      background-image: linear-gradient(to right bottom, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./city-background-1920.jpg"); } }
   @media only screen and (max-width: 75em) {
     .App {
       background-image: linear-gradient(to right bottom, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./city-background-1350.jpg"); } }
@@ -301,6 +308,9 @@ body {
       background-image: linear-gradient(to right bottom, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./city-background-1080.jpg");
       flex-direction: column;
       background-position: top; } }
+  @media only screen and (min-height: 62.5em) {
+    .App {
+      background-image: linear-gradient(to right bottom, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./city-background-1920.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .App {
       background-image: linear-gradient(to right bottom, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./city-background-1502.jpg");
@@ -308,12 +318,11 @@ body {
       background-position: top; } }
 
 .content {
-  height: 100%;
-  width: 60%;
-  padding: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  width: 60%;
+  padding: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .content {
       width: 100vw;
